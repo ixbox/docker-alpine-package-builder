@@ -16,4 +16,4 @@ for PACKAGE in $PACKAGES ; do
     sudo -u build bash -c "cd /home/build/aport/$PACKAGE; abuild -r"
 done
 
-[ "x$S3BUCKET" != "x" ] && aws s3 sync /home/build/packages/ $S3URL
+[ "x$S3BUCKET" != "x" ] && aws s3 sync /home/build/packages/ $S3URL || true
