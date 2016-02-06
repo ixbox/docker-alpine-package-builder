@@ -2,7 +2,7 @@ FROM alpine
 
 RUN apk add --no-cache bash git alpine-sdk py-pip && pip install awscli
 RUN addgroup build && adduser -s /bin/sh -D -G build build && addgroup build abuild && echo "build ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && sudo -Hu build abuild-keygen -ain
-RUN mkdir -p /var/cache/distfiles && chmod a+w /var/cache/distfiles
+RUN mkdir -p /var/cache/distfiles && chmod a+w /var/cache/distfiles && sed -e s#/packages/#/packages# /etc/abuild.conf
 
 COPY build.sh build.sh
 
