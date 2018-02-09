@@ -1,6 +1,10 @@
 # Supported tags and respective ```Dockerfile``` links
 
-- latest [(Dockerfile)](https://github.com/ixbox/docker-alpine-package-builder/blob/master/Dockerfile)
+- 3.7, latest [(Dockerfile)](https://github.com/ixbox/docker-alpine-package-builder/blob/master/3.7/Dockerfile)
+- 3.6 [(Dockerfile)](https://github.com/ixbox/docker-alpine-package-builder/blob/master/3.6/Dockerfile)
+- 3.5 [(Dockerfile)](https://github.com/ixbox/docker-alpine-package-builder/blob/master/3.5/Dockerfile)
+- 3.4 [(Dockerfile)](https://github.com/ixbox/docker-alpine-package-builder/blob/master/3.4/Dockerfile)
+- 3.3 [(Dockerfile)](https://github.com/ixbox/docker-alpine-package-builder/blob/master/3.3/Dockerfile)
 
 ## **Images**
 
