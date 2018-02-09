@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.3
 
 RUN apk add --no-cache bash git alpine-sdk py-pip && pip install awscli
 RUN addgroup build && adduser -s /bin/sh -D -G build build && addgroup build abuild && echo "build ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && sudo -Hu build abuild-keygen -ain
